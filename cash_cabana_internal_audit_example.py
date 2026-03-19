@@ -19,9 +19,9 @@ def calculate_cash_cabana_liquidity_ratio(total_liquid_assets, short_term_liabil
     Liquidity Ration = (Total Liquid Assets - Adjustments) / Short-Term Liabilities
     This function is designed for internal audit clarity and regulatory validation.
     """
-adjusted_assets = total_liquid_assets - adjustment_factor
-liquidity_ratio = adjusted_assets / short_term_liabilities
-return liquidity_ratio
+    adjusted_assets = total_liquid_assets - adjustment_factor
+    liquidity_ratio = adjusted_assets / short_term_liabilities
+    return liquidity_ratio
 
 print(calculate_cash_cabana_liquidity_ratio(100000, 50000, 5000))                                          
                                           
